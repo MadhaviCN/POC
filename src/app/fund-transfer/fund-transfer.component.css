@@ -1,0 +1,18 @@
+.headerClass {
+    background-color: darkblue;
+}
+.headerText {
+    color:#fff;
+    float:right;
+}
+.containerClass{
+    background-color:#00b8d4;
+}
+.formDiv{
+    float:right;
+}
+.btnClass{
+    width:200px;
+    float:right;
+    background-color: darkblue;
+}

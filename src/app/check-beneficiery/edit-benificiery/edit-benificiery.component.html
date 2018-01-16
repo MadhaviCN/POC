@@ -1,0 +1,22 @@
+<div class="container col-md-12" [class.containerClass] = "apply"> 
+    <div class="col-md-8 col-sm-8 col-xs-10" [class.formDiv] = "apply">        
+        <form >           
+          <div class="form-group col-md-8">
+              <label for="accNumber">Account Number:</label>
+              <input type="number" class="form-control" name="accNumber" ngModel/>
+          </div>
+          <div class="form-group col-md-8">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" name="name" ngModel/>
+          </div>
+          <div class="form-group col-md-8">
+              <label for="email">Email:</label>
+              <input type="text" class="form-control" name="email" ngModel/>
+          </div>
+          <div class="col-md-5" >
+              <button type="button" class="btn btn-primary" [class.btnClass] ="apply" (click) = "onUpdate()">Update</button>     
+          </div>
+        </form>      
+      </div>
+  </div>
+<router-outlet></router-outlet>

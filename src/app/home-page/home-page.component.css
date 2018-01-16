@@ -1,0 +1,12 @@
+.headerClass {
+    background-color: darkblue;
+}
+.headerText {
+    color:#fff;
+}
+.listText{
+    color:#fff !important;
+}
+.activeClass{
+    background-color: #00b8d4 !important;
+}

@@ -1,0 +1,28 @@
+<div class="container col-md-12" [class.containerClass] = "apply"> 
+    <nav class="navbar navbar-default" [class.headerClass] = "apply">
+      <div class="container-fluid">
+        <div class="navbar-header col-md-4 col-sm-8">
+          <h2 [class.headerText] = "apply">Online Banking</h2>
+        </div>
+        <ul class="nav navbar-nav">
+          <li routerLinkActive = "Active" [routerLinkActiveOptions] = '{ exact : true}' [class.activeClass]="apply">
+            <a [class.listText] = "apply" [routerLink] ="['account-details']">Account Details</a>
+          </li>
+          <li>
+            <a [class.listText] = "apply" [routerLink] ="['add-benificiery']">Add Benificiery</a>
+          </li>
+          <li>
+            <a [class.listText] = "apply" [routerLink] ="['check-beneficiery']">Check Benificiery</a>
+          </li>
+          <li>
+            <a [class.listText] = "apply" [routerLink] ="['fund-transfer']">Fund Transfer</a>
+          </li>
+          <li>
+            <a [class.listText] = "apply" [routerLink] ="['transfer-history']">Transfer History</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  
+<router-outlet></router-outlet>
