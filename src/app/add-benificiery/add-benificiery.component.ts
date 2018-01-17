@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { SuccessMessageService} from '../SuccessMessage.service';
+import { SuccessMessageService} from '../services/SuccessMessage.service';
 
 @Component({
   selector: 'app-add-benificiery',

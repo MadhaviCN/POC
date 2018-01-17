@@ -4,7 +4,7 @@ import 'rxjs/add/operator/toPromise';
 import { HttpClient } from "@angular/common/http";
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
-import {environment} from '../environments/environment';
+import {environment} from '../../environments/environment';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 //import {server} from '../../server/server.js'
@@ -23,7 +23,7 @@ export class SuccessMessageService  implements OnInit{
         console.log(this.viewObject);
     }
     postMethod (obj : {}) {
-        this.http.post('/api/apps', obj)
+        this.http.post('/user/apps', obj)
         // .map(res => res);
         .subscribe((data) => {
             this.users = data;
@@ -31,7 +31,7 @@ export class SuccessMessageService  implements OnInit{
           });
     }
     getMethod (){
-        this.http.get('/api/apps').subscribe((data) => {
+        this.http.get('/apps').subscribe((data) => {
             this.users = data;
             console.log(this.users);
         })

@@ -13,7 +13,7 @@ import { AddBenificieryComponent } from './add-benificiery/add-benificiery.compo
 import { CheckBeneficieryComponent } from './check-beneficiery/check-beneficiery.component';
 import { FundTransferComponent } from './fund-transfer/fund-transfer.component';
 import { TransferHistoryComponent } from './transfer-history/transfer-history.component';
-import { SuccessMessageService } from './SuccessMessage.service';
+import { SuccessMessageService } from './services/SuccessMessage.service';
 import { EditBenificieryComponent } from './check-beneficiery/edit-benificiery/edit-benificiery.component'
 
 

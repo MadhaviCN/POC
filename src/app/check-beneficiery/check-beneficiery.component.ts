@@ -1,7 +1,7 @@
 import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { SuccessMessageService } from '../SuccessMessage.service';
+import { SuccessMessageService } from '../services/SuccessMessage.service';
 
 @Component({
   selector: 'app-check-beneficiery',
@@ -26,6 +26,7 @@ export class CheckBeneficieryComponent implements OnInit {
     this.onEditFlag = true;
     this.message.viewObject = value;
     this.viewObject = value;
+    this.response = this.message.getMethod();
   }
 
 }

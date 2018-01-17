@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SuccessMessageService } from '../SuccessMessage.service'
+import { SuccessMessageService } from '../services/SuccessMessage.service'
 
 @Component({
   selector: 'app-account-details',
